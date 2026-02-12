@@ -147,7 +147,7 @@ sudo qemu-nbd --disconnect /dev/nbd0
 
 ```
 x-nbd/
-├── nbd/
+├── nbdmount/
 │   ├── __init__.py          # Package initialization and public API
 │   ├── __main__.py          # Command line main entry point
 │   ├── cli/

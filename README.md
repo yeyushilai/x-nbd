@@ -1,6 +1,6 @@
 # x-nbd
 
-x-nbd是一套基于 NBD（Network Block Device）机制的磁盘镜像挂载与管理工具，提供将虚拟机镜像映射为本地块设备并安全挂载的能力。
+x-nbd 是一套基于 NBD（Network Block Device）机制的磁盘镜像挂载与管理工具，提供将虚拟机镜像映射为本地块设备并安全挂载的能力。
 
 ## 功能特性
 
@@ -213,32 +213,6 @@ mypy nbd/
 python -m pytest tests/
 ```
 
-## Issue 提交规范
-
-### 提交 Issue 前请检查
-
-1. 搜索现有 Issue，确认问题未被报告
-2. 确认问题是否为已知限制或配置错误
-3. 准备复现步骤和环境信息
-
-### Issue 模板
-
-提交 Bug 报告时，请包含以下信息：
-
-#### 标题格式
-`[Bug] 简短的问题描述` 或 `[Feature] 功能建议`
-
-#### 内容模板
-
-```markdown
-## 问题描述
-清晰描述遇到的问题或建议的功能
-
-## 复现步骤
-1. 执行命令: `nbdmount disk.qcow2 mount`
-2. 观察到的错误信息: ...
-3. 期望的行为: ...
-
 ## 环境信息
 - 操作系统: Ubuntu 20.04
 - Python 版本: 3.9.7
@@ -246,52 +220,9 @@ python -m pytest tests/
 - 镜像格式: qcow2
 - 镜像大小: 10GB
 
-## 错误日志
-```
-粘贴完整的错误日志，包括堆栈跟踪
-```
-
-## 附加信息
-任何其他有助于解决问题的信息
-```
-
-### Issue 分类
-
-使用以下标签分类 Issue：
-
-- `bug` - 程序错误
-- `enhancement` - 功能增强
-- `documentation` - 文档改进
-- `question` - 使用问题
-- `help wanted` - 需要帮助
-- `good first issue` - 适合新手
-
-## 贡献指南
-
-欢迎贡献代码！请遵循以下步骤：
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
-
-### Pull Request 规范
-
-- 标题格式: `[类型] 简短描述`
-  - 类型: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-- 描述中说明更改内容和原因
-- 关联相关 Issue
-- 确保代码通过测试和代码风格检查
-
 ## 许可证
 
 本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
-## 致谢
-
-- QEMU 项目提供的 NBD 工具
-- 所有贡献者的支持
 
 ## 联系方式
 

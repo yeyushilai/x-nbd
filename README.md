@@ -1,6 +1,6 @@
 # x-nbd
 
-x-nbd 是一套基于 NBD（Network Block Device）机制的磁盘镜像挂载与管理工具，提供将虚拟机镜像映射为本地块设备并安全挂载的能力。
+`x-nbd` 是一套基于 NBD（Network Block Device）机制的磁盘镜像挂载与管理工具，提供将虚拟机镜像映射为本地块设备并安全挂载的能力。
 
 ## 功能特性
 
@@ -14,7 +14,7 @@ x-nbd 是一套基于 NBD（Network Block Device）机制的磁盘镜像挂载�
 ## 系统要求
 
 - **操作系统**: Linux (需要内核支持 NBD)
-- **Python**: 3.7+
+- **Python**: 3.9+
 - **依赖工具**:
   - `qemu-nbd` - QEMU NBD 工具
   - `qemu-img` - QEMU 镜像工具

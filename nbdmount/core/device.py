@@ -3,7 +3,7 @@ NBD 设备抽象层 - 体现资源封装
 """
 import logging
 from contextlib import contextmanager
-from typing import Generator, Optional
+from typing import Generator, Optional, List
 from ..formats import ImageFormat
 from ..utils.command import run_command
 from ..utils.devices import find_unused_nbd_device, get_partitions

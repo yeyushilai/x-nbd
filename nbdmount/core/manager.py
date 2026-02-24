@@ -2,12 +2,15 @@
 NBD 挂载核心管理器 - 高层业务逻辑编排
 """
 import logging
+import os
+import shutil
 from pathlib import Path
 from typing import Dict, Optional
 from ..formats import detect_image_format, ImageFormat
 from ..core.device import NBDDevice
 from ..core.mounter import MountManager
 from ..exceptions.errors import PermissionError
+from ..utils.command import run_command
 
 
 logger = logging.getLogger(__name__)
